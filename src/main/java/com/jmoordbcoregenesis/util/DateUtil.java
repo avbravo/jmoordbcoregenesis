@@ -3,7 +3,7 @@
 * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.avbravo.jmoordbcoregenesis.util;
+package com.jmoordbcoregenesis.util;
 // <editor-fold defaultstate="collapsed" desc="import">  
 
 

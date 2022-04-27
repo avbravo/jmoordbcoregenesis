@@ -6,8 +6,8 @@
 package com.avbravo.jmoordbcdi.configuration;
 
 
-import com.avbravo.jmoordbcoregenesis.util.ClassUtil;
-import com.avbravo.jmoordbcoregenesis.util.FacesMessagesUtil;
+import com.jmoordbcoregenesis.util.ClassUtil;
+import com.jmoordbcoregenesis.util.FacesMessagesUtil;
 import jakarta.faces.context.FacesContext;
 
 /**

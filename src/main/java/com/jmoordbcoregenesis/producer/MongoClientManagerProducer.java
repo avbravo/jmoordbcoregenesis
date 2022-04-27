@@ -12,7 +12,7 @@ import jakarta.ws.rs.Produces;
  *
  * @author avbravo
  */
-public class EntityManagerProducer {
+public class MongoClientManagerProducer {
     @PersistenceContext
     private EntityManager em;
  
