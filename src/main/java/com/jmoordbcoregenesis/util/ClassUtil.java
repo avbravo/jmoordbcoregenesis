@@ -44,35 +44,5 @@ public class ClassUtil {
     
     
     
-    // <editor-fold defaultstate="collapsed" desc="Optional<Query> readQueryAnnotation(Class classa, String method   )">
-    /**
-     * 
-     * @param classa : Clase a analizar
-     * @param method : metodo que deseamos encontrar
-     * @return Query : anotacion de la cual podemos leer los valores
-     */
     
-    public static Optional<Query> readQueryAnnotation(Class classa, String method   ){
-        Query query;
-        try {            
-             Method[] methods = classa.getMethods();
-            for (Method m : methods) {
-                if (m.getName().equals(method)) {
-
-                    if (m.isAnnotationPresent(Query.class)) {
-
-                        query = m.getAnnotation(Query.class);
-
-                        return Optional.of(query);
-                    }
-                }
-            }
-
-        } catch (Exception e) {
-             //FacesMessagesUtil.showError(e.getLocalizedMessage(), ClassUtil.nameOfClassAndMethod());
-              logger.log(Level.SEVERE,  ClassUtil.nameOfClassAndMethod() + " "+e.getLocalizedMessage());
-        }
-        return Optional.empty();
-    }
-    // </editor-fold>
 }
