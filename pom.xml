@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jmoordbcoregenesis</groupId>
     <artifactId>jmoordbcoregenesis</artifactId>
-    <version>1.0-4</version>
+    <version>1.0-5</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
@@ -11,6 +11,8 @@
         <jakartaee>9.1.0</jakartaee>
         <version.payara.micro>6.2022.1.Alpha2</version.payara.micro>
         <version.payara>6.2022.1.Alpha2</version.payara>
+        <version.mongodb-driver-sync>4.6.0</version.mongodb-driver-sync>
+        
     </properties>
     <name>jmoordbcoregenesis</name>
     
@@ -47,10 +49,15 @@
             <version>1.18.22</version>
         </dependency>
         
-          <dependency>
+        <!--
+           MongoDB Driver Sync
+        -->
+        <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver-sync</artifactId>
-            <version>4.0.6</version>
+            <version>${version.mongodb-driver-sync}</version>
+            <!--<version>4.6.0</version>-->
+            
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -75,7 +82,7 @@
         </dependency>
         
         
-             <!--
+        <!--
         Para el sql query
         -->
         <dependency>
@@ -88,10 +95,10 @@
            Generador dimamico de  clases     Java
         -->                
         <dependency>
-  <groupId>net.bytebuddy</groupId>
-  <artifactId>byte-buddy</artifactId>
-  <version>1.12.8</version>
-</dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+            <version>1.12.8</version>
+        </dependency>
         <dependency>
             <groupId>org.eclipse.microprofile.config</groupId>
             <artifactId>microprofile-config-api</artifactId>
