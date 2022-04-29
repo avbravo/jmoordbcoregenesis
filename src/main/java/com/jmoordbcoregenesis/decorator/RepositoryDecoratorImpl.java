@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.jmoordbcoregenesis.legacy;
+package com.jmoordbcoregenesis.decorator;
 
 import jakarta.inject.Inject;
 
@@ -11,9 +11,9 @@ import jakarta.inject.Inject;
  * @author avbravo
  */
 //@Decorator
-public abstract class RepositoryDecoratorLegacy <T, V> implements RepositoryLegacy<T, V>{
+public abstract class RepositoryDecoratorImpl <T, V> implements RepositoryDecotator<T, V>{
 //  @Inject @Delegate Repository<T, V> delegate;
-    @Inject RepositoryLegacy<T, V> delegate;
+    @Inject RepositoryDecotator<T, V> delegate;
 
 //    @Inject Logger log;
 //    @Inject Set<Permission> permissions;
